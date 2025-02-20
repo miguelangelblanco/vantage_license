@@ -317,7 +317,7 @@ def get_transaction_data(accessToken, start_date, end_date):
         return df
 
 def get_field_data(tenant_name, process_skill_name):
-    date_14_days_ago = datetime.now() - relativedelta(days=13)
+    date_14_days_ago = datetime.now() - relativedelta(days=100)
     print(date_14_days_ago)
     formatted_date = date_14_days_ago.strftime('%Y-%m-%dT%H:%M:%SZ')
     process_skill_id = get_skill_id(process_skill_name, tenant_name)
